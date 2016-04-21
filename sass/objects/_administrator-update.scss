@@ -1,0 +1,28 @@
+.administrator-update{
+    margin: $glyphsSize $containerMargin;
+
+    &__heading{
+        margin-bottom: 1rem;
+    }
+
+    &__block{
+
+        &:not(:last-of-type){
+            margin-bottom: 1rem;
+        }
+
+        & label{
+            margin-right: 1rem;
+        }
+    }
+
+    &__submit{
+        margin-top: $glyphsSize;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    & p.administrator-update__validate{
+        box-sizing: border-box;
+    }
+}

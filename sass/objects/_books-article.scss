@@ -1,0 +1,11 @@
+.books-article{
+
+    &+.books-article{
+        margin-top: 1rem;
+    }
+
+    &__heading{
+        font-size: 0;
+        position: absolute;
+    }
+}

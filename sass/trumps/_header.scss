@@ -1,0 +1,7 @@
+.header{
+
+    &.book-page,&.inscription-page,&.connexion-page,&.administration-page,&.authors-page{
+        min-height: 0vh;
+        background: none;
+    }
+}

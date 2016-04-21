@@ -1,0 +1,15 @@
+.access{
+    &.administration-page{
+        .access__block{
+            border: 1px solid $secondColor;
+        }
+
+        .access__submit{
+            background-color: $secondColor;
+        }
+
+        .access__validate{
+            border: 1px solid $secondColor;
+        }
+    }
+}

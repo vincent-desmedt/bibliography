@@ -1,0 +1,14 @@
+.books-article-figure{
+
+    &.book-page{
+        text-align: center;
+    }
+
+    &__description{
+
+        &.book-page{
+            display: block;
+            margin-left: 0 auto;
+        }
+    }
+}

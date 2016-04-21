@@ -1,0 +1,25 @@
+.access{
+
+    &__block{
+        border: 1px solid $mainColor;
+        padding: 5%;
+
+        & input{
+            border: none;
+        }
+    }
+
+    &__submit{
+        border: none;
+        background-color: $mainColor;
+        color: $navigationTextColor;
+        padding: 5%;
+        cursor: pointer;
+    }
+
+    &__validate{
+        background-color: $validatedForm;
+        padding: 5%;
+        border: 1px solid $mainColor;
+    }
+}

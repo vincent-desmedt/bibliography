@@ -1,0 +1,46 @@
+.books-rate{
+    margin-top: $glyphsSize;
+
+    &__heading{
+        font-size: 0;
+        position: absolute;
+    }
+
+    &__label{
+        display: block;
+        line-height: $glyphsSize;
+    }
+
+    &__label:before{
+        font: $glyphsSize $glyphs;
+        color: $star;
+        content: "";
+        cursor: pointer;
+        position: relative;
+        top: 4px;
+        right: 4px;
+    }
+
+    &__input:checked+&__label:before{
+        content: "";
+    }
+
+    &__input{
+        position: absolute;
+        visibility: hidden;
+    }
+
+    &__submit{
+        display: block;
+        margin: 0 auto;
+        min-width: 200px;
+        background-color: $mainColor;
+        border: none;
+        color: $navigationTextColor;
+        margin-top: $glyphsSize;
+        font-size: $bodyFontSize;
+        padding: 5% 0;
+        padding: 10px 0;
+        cursor: pointer;
+    }
+}

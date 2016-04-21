@@ -1,0 +1,25 @@
+.administrator-update{
+
+    &__block{
+        border: 1px solid $secondColor;
+        padding: $containerMargin 0 $containerMargin $containerMargin;
+
+        & input{
+            border: none;
+        }
+    }
+
+    &__submit{
+        background-color: $secondColor;
+        color: $navigationTextColor;
+        padding: $containerMargin;
+        border: none;
+    }
+
+    & p.administrator-update__validate{
+        background-color: $validatedForm;
+        padding: $containerMargin;
+        border: 1px solid $secondColor;
+        text-align: center;
+    }
+}

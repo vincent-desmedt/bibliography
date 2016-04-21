@@ -1,0 +1,24 @@
+.books-my-comment{
+    margin: $glyphsSize 0;
+
+    &__heading{
+        font-size: 0;
+        position: absolute;
+    }
+
+    &__label{
+        float: left;
+    }
+
+    &__text{
+        box-sizing: border-box;
+        float: left;
+        margin: $containerMargin 0;
+        min-width: 50%;
+    }
+
+    &__submit{
+        display: block;
+        width: 100%;
+    }
+}

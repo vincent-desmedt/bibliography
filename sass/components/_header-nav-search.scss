@@ -1,0 +1,22 @@
+.header-nav-search{
+
+    &__search-book-input{
+        border: none;
+        line-height: $lineHeightToogleMenu;
+        padding-left: 1rem;
+    }
+
+}
+
+#header-search-submit{
+    background-color: $mainColor;
+    border: none;
+    line-height: $lineHeightToogleMenu;
+    width: $lineHeightToogleMenu;
+    &:before{
+        font: 14px $glyphs;
+        content: "";
+        color: $navigationTextColor;
+        line-height: $lineHeightToogleMenu;
+    }
+}

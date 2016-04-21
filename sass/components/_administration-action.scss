@@ -1,0 +1,36 @@
+.administration-action{
+    text-align: center;
+
+    &__heading{
+        text-align: left;
+    }
+
+    & label{
+        border: 1px solid $secondColor;
+        padding: $containerMargin;
+
+        &:after{
+            font: $bodyFontSize $glyphs;
+            content: "";
+            display: inline-block;
+            margin-left: 0.5rem;
+        }
+    }
+
+    &__list{
+        background-color: $secondColor;
+    }
+
+    &__link{
+        color: $navigationTextColor;
+        font-weight: normal;
+        padding: $containerMargin;
+        border-bottom: 1px solid $navigationTextColor
+    }
+
+    & input{
+        position: absolute;
+        top: -101%;
+        visibility: hidden;
+    }
+}

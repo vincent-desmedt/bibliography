@@ -1,0 +1,71 @@
+/* Cv
+ *
+ * /sass/styles.scss - Main stylesheet
+ *
+ * coded by Vincent De Smedt!
+ */
+
+// 1. Settings - Variables globales
+@import "settings/paths";
+@import "settings/colors";
+@import "settings/fonts";
+@import "settings/sizes";
+
+// 2. Tools - Mixins globaux, functions & outils
+// @import "tools/utils";
+
+// 3. Generic - Style de remise à zéro (reset, normalize…)
+@import "generic/meyer-reset";
+
+// 4. Base - Éléments bruts
+@import "base/root";
+
+// 5. Objects - Éléments de mise en forme non-cosmétique
+@import "objects/header-nav-search";
+@import "objects/books.scss";
+@import "objects/books-article.scss";
+@import "objects/books-article-figure.scss";
+@import "objects/books-article-availability.scss";
+@import "objects/books-my-comment.scss";
+@import "objects/access.scss";
+@import "objects/administration-action.scss";
+@import "objects/administrator-update.scss";
+@import "objects/authors.scss";
+@import "objects/author.scss";
+@import "objects/author-article.scss";
+@import "objects/author-article-figure.scss";
+@import "objects/author-written-books.scss";
+@import "objects/editors.scss";
+@import "objects/editor.scss";
+@import "objects/editor-article.scss";
+@import "objects/editor-article-figure.scss";
+@import "objects/editor-written-books.scss";
+
+// 6. Components - Design des composants, morceaux d'UI
+@import "components/header.scss";
+@import "components/header-nav-search.scss";
+@import "components/books-article-figure.scss";
+@import "components/books-article.scss";
+@import "components/books-article-availability.scss";
+@import "components/books-rate.scss";
+@import "components/books-my-comment.scss";
+@import "components/books-comments.scss";
+@import "components/access.scss";
+@import "components/administration-action.scss";
+@import "components/administrator-update.scss";
+@import "components/authors.scss";
+@import "components/author-article-figure.scss";
+@import "components/author-written-books.scss";
+@import "components/editors.scss";
+@import "components/editor-article-figure.scss";
+@import "components/editor-written-books.scss";
+
+
+// 7. Trumps - Styles spécifiques à un élément
+@import "trumps/header.scss";
+@import "trumps/books-article-figure.scss";
+@import "trumps/books.scss";
+@import "trumps/header-nav.scss";
+@import "trumps/footer.scss";
+@import "trumps/access.scss";
+@import "trumps/administrator-update.scss";

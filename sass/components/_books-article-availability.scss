@@ -1,0 +1,24 @@
+.books-article-availability{
+    text-align: center;
+    border: 1px solid $borderColor;
+
+    &__heading{
+        padding: $containerMargin 0;
+        background-color: $mainColor;
+        color: $navigationTextColor;
+        margin-bottom: 1rem;
+    }
+
+    &__current-availability{
+        margin-bottom: 0.75rem;
+    }
+
+    &__elt{
+        padding: 0 $containerMargin;
+        text-align: left;
+
+        &:last-child{
+            margin-bottom: $containerMargin;
+        }
+    }
+}

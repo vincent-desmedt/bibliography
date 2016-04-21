@@ -1,0 +1,21 @@
+.books-my-comment{
+    border: 1px solid $mainColor;
+
+    &__label{
+        margin: $containerMargin;
+        text-align: left;
+    }
+
+    &__text{
+        border: none;
+        vertical-align: top;
+    }
+
+    &__submit{
+        background-color: $mainColor;
+        color: $navigationTextColor;
+        border: none;
+        padding: 10px 0;
+        cursor: pointer;
+    }
+}

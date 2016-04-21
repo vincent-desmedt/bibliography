@@ -1,0 +1,22 @@
+.books-comments{
+    text-align: left;
+
+    &__number-comments{
+        font-weight: bold;
+    }
+
+    &__list{
+        border: 1px solid $borderColor;
+        padding: $containerMargin;
+    }
+
+    &__user{
+        font-weight: 500;
+        margin-bottom: $containerMargin;
+
+        &:before{
+            font: $glyphsSize $glyphs;
+            content: "";
+        }
+    }
+}

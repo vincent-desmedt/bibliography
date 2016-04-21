@@ -1,0 +1,32 @@
+.administration-action{
+    margin: $glyphsSize $containerMargin 0;
+
+    &__heading{
+        margin-bottom: 1rem;
+    }
+
+    & label{
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    &__list{
+        position: absolute;
+        top: -101%;
+    }
+
+    &__link{
+        display: block;
+    }
+
+    & input{
+        position: absolute;
+        top: -101%;
+        visibility: hidden;
+    }
+
+    & input:checked+&__list{
+        position: static;
+        margin: -1rem 0 1rem;
+    }
+}

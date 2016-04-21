@@ -1,0 +1,150 @@
+/* Cv
+ *
+ * /sass/base/_root.scss - Base styles for root element
+ *
+ * coded by Vincent De Smedt!
+ */
+
+ html,body{
+     overflow-x: hidden;
+     font: 14px/1.43 $mainFont;
+ }
+
+a{
+    text-decoration: none;
+    color: $colorLink;
+    font-weight: bold;
+}
+
+a:active,a:hover,a:focus{
+    color: $secondColor;
+}
+
+
+// ___________topbar
+.header-heading{
+    font-size: 0;
+    position: absolute;
+}
+
+.header-nav{
+    min-height: $navigationHeight;
+    background-color: $mainColor;
+    text-align: center;
+}
+
+.header-nav__menu-label:before{
+    font: $glyphsSize $glyphs;
+    color: $navigationTextColor;
+    content: "";
+    cursor: pointer;
+    line-height: $navigationHeight;
+    float: left;
+    margin: 0 $containerMargin;
+}
+
+.header-nav__menu-label{
+    font-size: 0;
+}
+
+.header-nav__menu-list{
+    width: 100%;
+    text-align: left;
+    background-color: $navigationTextColor;
+    position: absolute;
+    z-index: 1;
+    right: 101%;
+}
+
+.header-nav__menu-list__link{
+    padding-left: $containerMargin;
+    display: block;
+    line-height: $lineHeightToogleMenu;
+    border-bottom: 1px solid $borderColor;
+}
+
+#header-navigation-toogle:checked + .header-nav__menu-list{
+    left: 0%;
+}
+
+#header-navigation-toogle{
+    position: absolute;
+    right: 101%;
+}
+
+.header-nav__menu-connexion-label:before{
+    font: $glyphsSize $glyphs;
+    color: $navigationTextColor;
+    content: "";
+    cursor: pointer;
+    line-height: $navigationHeight;
+    float: right;
+    margin: 0 $containerMargin;
+}
+
+.header-nav__menu-connexion-label{
+    font-size: 0;
+}
+
+.header-nav__menu-connexion-list{
+    position: absolute;
+    z-index: 2;
+    background-color: $navigationTextColor;
+    border: 1px solid $borderColor;
+    right: 101%;
+}
+
+.header-nav__menu-connexion__link{
+    display: block;
+    line-height: $lineHeightToogleMenu;
+    padding: 0 $containerMargin;
+}
+
+#header-connexion-navigation-toogle:checked + .header-nav__menu-connexion-list{
+    right: 1%;
+}
+
+#header-connexion-navigation-toogle{
+    position: absolute;
+    right: 101%;
+}
+
+.header-nav__heading-link{
+    color: $navigationTextColor;
+    text-decoration: none;
+    font-size: $glyphsSize;
+    line-height: $navigationHeight;
+
+}
+
+.header-nav__heading-link:before{
+    font: $glyphsSize $glyphs;
+    content: "";
+    margin-right: 0.25rem;
+}
+
+.header-nav__heading-link-description{
+    position: absolute;
+    bottom: 101%;
+    color: transparent;
+}
+
+.header-nav__heading{
+    position: absolute;
+    right: 101%;
+}
+
+// ___________ fin topbar
+
+
+// ___________ début footer
+
+.footer{
+    line-height: $lineHeightToogleMenu;
+    background-color: $mainColor;
+
+    &__copyright{
+        color: $navigationTextColor;
+        margin-left: $containerMargin;
+    }
+}
